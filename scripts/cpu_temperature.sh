@@ -6,7 +6,7 @@ source "$CURRENT_DIR/helpers.sh"
 
 print_cpu_temperature() {
 	temp=$(/Applications/smcFanControl.app/Contents/Resources/smc -k TG0P -r | awk '{print $3}')
-	printf "%5.1f" $temp
+	printf "%.1f" $temp
 }
 
 main() {
