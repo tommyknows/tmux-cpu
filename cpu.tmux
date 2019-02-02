@@ -10,6 +10,10 @@ cpu_interpolation=(
 	"\#{cpu_bg_color}"
 	"\#{cpu_fg_color}"
 	"\#{cpu_temperature}"
+	"\#{gpu_percentage}"
+	"\#{gpu_icon}"
+	"\#{gpu_bg_color}"
+	"\#{gpu_fg_color}"
 )
 cpu_commands=(
 	"#($CURRENT_DIR/scripts/cpu_percentage.sh)"
@@ -17,6 +21,10 @@ cpu_commands=(
 	"#($CURRENT_DIR/scripts/cpu_bg_color.sh)"
 	"#($CURRENT_DIR/scripts/cpu_fg_color.sh)"
 	"#($CURRENT_DIR/scripts/cpu_temperature.sh)"
+	"#($CURRENT_DIR/scripts/gpu_percentage.sh)"
+	"#($CURRENT_DIR/scripts/gpu_icon.sh)"
+	"#($CURRENT_DIR/scripts/gpu_bg_color.sh)"
+	"#($CURRENT_DIR/scripts/gpu_fg_color.sh)"
 )
 
 set_tmux_option() {
